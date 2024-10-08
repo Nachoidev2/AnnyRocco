@@ -12,6 +12,12 @@
   <meta name="description" content="AnnieRoccoArt is the portfolio of Anabella Rocco, a talented 3D/2D artist and specializing in environments. Explore her work at annieroccoart.com.ar.">
   <meta name="keywords" content="annieroccoart, Anabella Rocco, Artista 3D, Artist 3D, Artista 2D, Artist 2D, environment, annierocco, annieart">
   <meta name="author" content="Anabella Rocco">
+  <!-- Include jQuery -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+
+  <!-- Include Thickbox -->
+  <script src="js/jquery.thickbox.js"></script>
+
 
 </head>
 
@@ -113,7 +119,7 @@
         <div class="row gallery-row">
           <div>
             <div class="card"> 
-              <a href="Batman.html">
+              <a href="assets/img/anabella-rocco-batimo.jpg" class="thickbox">
               <img class="card-img2" src="assets/img/anabella-rocco-batimo.jpg" alt="">
               <div class="card-img-overlay">
                 <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
@@ -434,6 +440,16 @@
     </div>
   </div>
 </div>
+
+<!-- Initialize Thickbox -->
+<script>
+  $(document).ready(function () {
+      $(".thickbox").click(function () {
+          // Initialization code for Thickbox
+          return false; // Prevent the default behavior of the link
+      });
+  });
+</script>
 
 <!--  <div class="container-fluid fh5co-recent-work activity">
     <div class="container recent">
